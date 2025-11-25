@@ -8,7 +8,7 @@ const development = {
   port: process.env.DB_PORT,
   dialect: process.env.DB_DIALECT,
   database_test: process.env.DB_DATABASE_TEST,
-  database_production: process.env.DB_DATABASE_PRODUCTION
+  database_production: process.env.DB_DATABASE_PROD
 }
 const production = {
   username: process.env.DB_USER,
@@ -17,8 +17,7 @@ const production = {
   host: process.env.DB_HOST,
   port: process.env.DB_PORT,
   dialect: process.env.DB_DIALECT,
-  database_test: process.env.DB_DATABASE_TEST,
-  database_production: process.env.DB_DATABASE_PRODUCTION
+  database_production: process.env.DB_DATABASE_PROD
 }
 
 const test = {
@@ -29,7 +28,6 @@ const test = {
   port: process.env.DB_PORT,
   dialect: process.env.DB_DIALECT,
   database_test: process.env.DB_DATABASE_TEST,
-  database_production: process.env.DB_DATABASE_PRODUCTION
 }
 
 module.exports = { development, production, test };
